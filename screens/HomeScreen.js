@@ -125,7 +125,7 @@ const HomeScreen = ({ navigation, route }) => {
         type: 'image/jpeg',
       });
 
-      const apiUrl = `https://my-api.plantnet.org/v2/identify/all?api-key=2b103ud12aceCtJmrtfYtK4Y8u`;
+      const apiUrl = `APIKEY`;
       const response = await fetch(apiUrl, { method: 'POST', body: formData });
       const data = await response.json();
 
@@ -185,7 +185,7 @@ Keep each answer to a few words.`;
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer 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`, // Replace with a valid key
+          Authorization: `APIKEY`, // Replace with a valid key
         },
         body: JSON.stringify({
           model: 'gpt-3.5-turbo', 
